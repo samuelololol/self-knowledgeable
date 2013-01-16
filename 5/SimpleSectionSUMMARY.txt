@@ -1,0 +1,15 @@
+Microsoft (R) COFF/PE Dumper Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file SimpleSection.obj
+
+File Type: COFF OBJECT
+
+  Summary
+
+           4 .bss
+           C .data
+          68 .debug$S
+          18 .drectve
+          4E .text

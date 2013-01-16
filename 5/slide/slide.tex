@@ -1,0 +1,76 @@
+\PassOptionsToPackage{subsection=false}{beamerouterthememiniframes}
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+\usepackage{CJKutf8}
+\usepackage{listings}
+\usepackage{adjustbox}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+% set background image
+% \usebackgroundtemplate{\includegraphics[width=\paperwidth]{./image/tcloudpages.jpg}}
+% transparent for frametitle
+% \addtobeamertemplate{frametitle}{\pgfsetfillopacity{0.7}}{\pgfsetfillopacity{1}}
+\begin{document}
+\begin{CJK*}{UTF8}{nkai}
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+ 
+\lstset{
+basicstyle=\footnotesize,
+keywordstyle=\color{javapurple}\bfseries,
+stringstyle=\color{javared},
+commentstyle=\color{javagreen},
+morecomment=[s][\color{javadocblue}]{/**}{*/},
+frame=single,
+language=C++,
+numbers=left,
+numberstyle=\tiny,
+numbersep=10pt,
+stepnumber=1,
+showstringspaces=false,
+breakatwhitespace=false,
+breaklines=true,     
+%tabsize=1,
+%showtabs=false
+%basicstyle=\footnotesize,
+xleftmargin=5.0ex
+}
+
+
+% basic info
+\title{程式設計師的自我修養}
+\subtitle{Ch5. Windows PE/COFF}
+\author[Samuel]{Samuel Chen}
+%\subtitle{Python-based Web API Service\\(aka. CloudSwitch)}
+\date{\today}
+
+\frame{\titlepage}
+
+% background
+\begin{frame}
+    \frametitle{Outline}
+    \tableofcontents
+\end{frame}
+
+\input ch5.tex
+
+
+% end page
+{
+    \begin{frame}
+    \begin{center}
+        \Huge Thank you!
+    \end{center}
+    \end{frame}
+}
+
+
+
+\end{CJK*}
+\end{document}
